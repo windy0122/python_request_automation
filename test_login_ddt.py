@@ -1,8 +1,9 @@
 import requests
 from ddt import ddt, data, unpack
 import unittest
-from class_unittest.get_data import GetData
+from get_data import GetData
 import json
+import HTMLTestRunner_cn
 
 
 test_data = GetData('test.xlsx', 'Sheet1').get_data()
@@ -37,3 +38,11 @@ class LoginTest(unittest.TestCase):
         r = requests.post(url=uat_url, headers=header, data=json.dumps(payload), verify=False)
         print(r.json())
 
+
+suite = unittest.TestSuite()
+loder = unittest.TestLoader()
+suite.addTest(loder.loadTestsFromTestCase(LoginTest))
+
+with open('test_report.html', 'wb') as file:
+    runner = HTMLTestRunner_cn.HTMLTestRunner(stream=file, verbosity=2,title='测试报告',description='haha')
+    runner.run(suite)

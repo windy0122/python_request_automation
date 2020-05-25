@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>迪哥的测试报告</title>
+    <title>测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
@@ -312,22 +312,22 @@ function hide_img(obj){
     </div>
 </div>
 <div class='heading'>
-<h1 style="font-family: Microsoft YaHei">迪哥的测试报告</h1>
-<p class='attribute'><strong>测试人员 : </strong> 迪哥</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-05-18 22:00:53</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:00</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 3，通过 2，失败 1，通过率= 66.67%</p>
+<h1 style="font-family: Microsoft YaHei">测试报告</h1>
+<p class='attribute'><strong>测试人员 : </strong> 最棒QA</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-05-25 18:02:49</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:04.663136</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 9，通过 9，通过率= 100.00%</p>
 
-<p class='description'>第一次报告</p>
+<p class='description'>haha</p>
 </div>
 
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 66.67% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 1 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 3 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 9 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 9 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -349,70 +349,84 @@ function hide_img(obj){
     <td style="width:200px">错误截图</td>
 </tr>
 
-<tr class='failClass warning'>
-    <td>class_unittest.class_unittest_one.TestMathMethod</td>
-    <td class="text-center">3</td>
-    <td class="text-center">2</td>
-    <td class="text-center">1</td>
+<tr class='passClass warning'>
+    <td>test_login_ddt.LoginTest</td>
+    <td class="text-center">9</td>
+    <td class="text-center">9</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',3)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',9)" class="detail" id='c1'>详细</a></td>
         <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1_1' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_add_two_negative</div></td>
+    <td class='passCase'><div class='testcase'>test_login_1</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
     <td>无截图</td>
 </tr>
 
-<tr id='ft1_2' class='none'>
-    <td class='failCase'><div class='testcase'>test_add_two_one</div></td>
-    <td colspan='5' align='center'>
-    <!--默认收起错误信息 -Findyou  -->
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
-    <div id='div_ft1_2' class="collapse">
-
-    <!-- 默认展开错误信息 -Findyou
-    <button id='btn_ft1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_2'>失败</button>
-    <div id='div_ft1_2' class="collapse in"> -->
-    <pre>
-    
-ft1_2: 1+1的结果是： 2
-错误啦，断言错误1 != 2 : 算法错误
-Traceback (most recent call last):
-  File "D:\python_http\class_unittest\class_unittest_one.py", line 14, in test_add_two_one
-    raise e
-  File "D:\python_http\class_unittest\class_unittest_one.py", line 11, in test_add_two_one
-    self.assertEqual(1, res, '算法错误')
-AssertionError: 1 != 2 : 算法错误
-
-
-    </pre>
-    </div>
-    </td>
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_2</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
     <td>无截图</td>
 </tr>
 
 <tr id='pt1_3' class='hiddenRow'>
-    <td class='passCase'><div class='testcase'>test_add_two_zero</div></td>
+    <td class='passCase'><div class='testcase'>test_login_3</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_4</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_6</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_7</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_8</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_9</div></td>
     <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
     <td>无截图</td>
 </tr>
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>3</td>
-    <td>2</td>
-    <td>1</td>
+    <td>9</td>
+    <td>9</td>
+    <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>
-    <td>通过率：66.67%</td>
+    <td>通过率：100.00%</td>
 </tr>
 </table>
 
 <script>
     showCase(1);
-    drawCircle(2, 1, 0);
+    drawCircle(9, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

@@ -1,5 +1,5 @@
 import unittest
-from class_unittest.class_unittest_one import TestMathMethod
+from class_unittest_one import TestMathMethod
 import HTMLTestRunner_cn
 
 
