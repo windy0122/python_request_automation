@@ -1,5 +1,5 @@
 import unittest
-from class_unittest.math_method import MathMethod
+from math_method import MathMethod
 
 
 class TestMathMethod(unittest.TestCase):

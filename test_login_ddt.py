@@ -44,5 +44,6 @@ loder = unittest.TestLoader()
 suite.addTest(loder.loadTestsFromTestCase(LoginTest))
 
 with open('test_report.html', 'wb') as file:
-    runner = HTMLTestRunner_cn.HTMLTestRunner(stream=file, verbosity=2,title='测试报告',description='haha')
+    runner = HTMLTestRunner_cn.HTMLTestRunner(stream=file, verbosity=2, title='接口测试报告', \
+                                              description='登录接口测试报告', tester='吴迪')
     runner.run(suite)
